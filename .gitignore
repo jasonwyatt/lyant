@@ -23,6 +23,10 @@ _testmain.go
 *.test
 *.prof
 
+# revel
 test-results/
 tmp/
 routes/
+
+#lyant
+env.sh
