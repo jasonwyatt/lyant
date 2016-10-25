@@ -5,6 +5,7 @@
 module:testrunner
 
 GET     /                                       App.Index
+GET     /callback                               App.GitLogin
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

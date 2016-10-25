@@ -5,10 +5,29 @@
     <title>{{.title}}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-3.3.6.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-3.3.6.min.css"> -->
     <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
     <script src="/public/js/jquery-2.2.4.min.js"></script>
-    <script src="/public/js/bootstrap-3.3.6.min.js"></script>
+    <!-- <script src="/public/js/bootstrap-3.3.6.min.js"></script> -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+    <style>
+
+    html{
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body{
+      padding:0px;
+      margin: 0px;
+    }
+    </style>
+
     {{range .moreStyles}}
       <link rel="stylesheet" type="text/css" href="/public/{{.}}">
     {{end}}
@@ -16,4 +35,4 @@
       <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
     {{end}}
   </head>
-  <body>
+  <body class="pink darken-3">

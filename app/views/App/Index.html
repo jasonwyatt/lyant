@@ -1,21 +1,35 @@
 {{set . "title" "Home"}}
 {{template "header.html" .}}
 
-<header class="jumbotron" style="background-color:#A9F16C">
+<header>
   <div class="container">
-    <div class="row">
-      <h1>It works!</h1>
+    <div class="card-content white-text">
+      <h1>LYANT!</h1>
       <p></p>
     </div>
   </div>
 </header>
 
 <div class="container">
-  <div class="row">
+  <!-- <div class="row">
     <div class="span6">
+      <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=dff44cc859cd00bdb830">Click here</a> to Login via GitHub!</a>
       {{template "flash.html" .}}
     </div>
-  </div>
+  </div> -->
+  <div class="row">
+        <div class="col s12 m6" style="padding: 10% 25% 0 25%; width:100%;">
+          <div class="card grey lighten-5">
+            <div class="card-content ">
+              <span class="card-title">Login</span>
+              <p>Welcome to LYANT , Learn yourself A new thing, timeline of your learning, suggestion for your next learning.</p>
+            </div>
+            <div class="card-action" align = center>
+              <a href="{{.loginUrl}}" class="waves-effect waves-light btn grey darken-4">Login with Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
 
 {{template "footer.html" .}}
